@@ -1,4 +1,4 @@
-#include <Adafruit_NeoPixel.h>
+ #include <Adafruit_NeoPixel.h>
 #include <avr/eeprom.h>
 #include <EEPROM.h>
 
@@ -8,10 +8,10 @@ const int arenaX = 10;
 const int arenaY = 14;
 int arena[arenaY][arenaX] = {0};
 int downTime = 500;
-int rightButton = 7;
-int leftButton = 6;
-int downButton = 5;
-int rotButton = 4;
+int rightButton = 6;
+int leftButton = 5;
+int downButton = 4;
+int rotButton = 7;
 int moveTime = 200;
 int score = 0;
 int animationTime = 100;
@@ -1151,10 +1151,10 @@ void SBlock::goLeft()
     switch (state % 2)
     {
     case 0:
-        checkBlock[0] = false;
-        checkBlock[1] = true;
-        checkBlock[2] = true;
-        checkBlock[3] = false;
+        checkBlock[0] = true;
+        checkBlock[1] = false;
+        checkBlock[2] = false;
+        checkBlock[3] = true;
         break;
     case 1:
         checkBlock[0] = false;
@@ -1956,8 +1956,10 @@ int checkButtonPress()
 
     else if (buttonRight == LOW)
         return 2;
-    else if (buttonRot == LOW)
-        return 3;
+    else if (buttonRot == LOW){
+         while(buttonRot == HIGH);
+         return 3;
+        }
     else if (buttonDown == LOW)
         return 4;
     else
