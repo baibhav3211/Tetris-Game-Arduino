@@ -1,4 +1,11 @@
- #include <Adafruit_NeoPixel.h>
+// GitHub: https://github.com/baibhav3211/Tetris-Game-Arduino
+// Code for the game Tetris on an Arduino with a 109 LED matrix
+// The game is controlled by 4 buttons, 2 for movement, 1 for rotation and 1 for speeding up the piece
+// The game is played on a 10x14 grid, with the top 4 rows hidden from the player
+// Coded by: Robotics Society NIT Hamirpur
+
+
+#include <Adafruit_NeoPixel.h>
 #include <avr/eeprom.h>
 #include <EEPROM.h>
 
