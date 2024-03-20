@@ -13,6 +13,8 @@
 
 This project implements the classic game of Tetris using a Neopixel LED strip and an Arduino UNO. The player interacts with the game using five push buttons, controlling the movement and rotation of falling tetrominoes within a 10x10 matrix. The game features random spawning and locations for tetrominoes, with LED colors changing after each move. Additionally, the OLED display provides real-time feedback on the player's score, including the current score and high score. The game also includes a visually appealing LED effect to indicate game over.
 
+<img src=".\Assets\Full_project.jpg" alt="Alt Text" width="700">
+
 ## Features
 
 1. **10 X 10 LED Matrix.**
@@ -49,11 +51,12 @@ This project implements the classic game of Tetris using a Neopixel LED strip an
     1. Via using any 3D printing technique print the modles [box1](.\Assets\box1.stl) and [box2](.\Assets\box2.stl).
     2. The box1 is used to keep the 10 X 10 LED matrix, whereas, box2 is used to keep Arduino UNOs, wires and OLED Display.
     3. If you want you can use Sunboard or Cardboard to make the subsection for the LED Matrix and cover it with an translucent acrylic sheet.
+    4. <img src=".\Assets\boxes.jpg" alt="Alt Text" width="700">
 2. **10 X 10 LED Matrix**
     1. To make a 10 X 10 noepixel LED Matrix we need 109 LEDs in the Strip.
     2. Paste Strip of 10 LEDs in a row.
     3. To make the next row fold the strip (folding consumes 1 LED) and make the next row as shown in the figure below.
-    4. <img src=".\Assets\matrix.png" alt="Alt Text" width="700">
+    4. <img src=".\Assets\LED_Matrix.jpg" alt="Alt Text" width="700">
 3. **Flashing the Code**
     1. **NOTE:** *While flashing the code it is recommended to remove/un-plug all the wires/connections of devices attached (LED, another Arduino, OLED Display) to prevent any damage.*
     2. Flash the code [Game.ino](.\Game.ino) in one Arduino UNO and lets number it as 01. This code controls LED Matrix and buttons.
