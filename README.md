@@ -48,7 +48,7 @@ This project implements the classic game of Tetris using a Neopixel LED strip an
 ## Setup
 
 1. **Tetris Body (Optional)**
-    1. Via using any 3D printing technique print the modles [box1](.\Assets\box1.stl) and [box2](.\Assets\box2.stl).
+    1. Via using any 3D printing technique print the modles [box1](.\Assets\box1.stl) and [box2](/Assets/box2.stl).
     2. The box1 is used to keep the 10 X 10 LED matrix, whereas, box2 is used to keep Arduino UNOs, wires and OLED Display.
     3. If you want you can use Sunboard or Cardboard to make the subsection for the LED Matrix and cover it with an translucent acrylic sheet.
     4. <img src=".\Assets\boxes.jpg" alt="Alt Text" width="700">
